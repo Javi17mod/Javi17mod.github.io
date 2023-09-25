@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" sizes="192x192" href="javi17mod.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Javi17mod | Webpage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+</style>
+  <script src="script.js"></script>
+      <header id="header">
+        <img src="headee.png" alt="Logo">
+    </header>
+
+  <br><br><br><br><br><br><br><br>
+  <div class="botones">
+
+    <button onclick="radio()" style="font-family: 'Fredoka', sans-serif;background-color:yellow; background: linear-gradient(to right, #FF5900, #FF9B00); color: black; padding: 6px 25px; border: none; border-radius: 5px; font-size: 30px;cursor: pointer; box-shadow: 0 1px 20px rgba(255,124,0,1);">Radio</button>
+    <button onclick="videos()" style="font-family: 'Fredoka', sans-serif;background-color:yellow; background: linear-gradient(to right, #FF0059, #DC00FF); color: black; padding: 6px 25px; border: none; border-radius: 5px; font-size: 30px;cursor: pointer; box-shadow: 0 1px 20px rgba(255,0,216,1);">Videos</button>
+  </div>
+  <div class="botones">
+    <button onclick="music()" style="font-family: 'Fredoka', sans-serif;background-color:yellow; background: linear-gradient(to right, #0023FF, #00ECFF); color: black; padding: 6px 25px; border: none; border-radius: 5px; font-size: 30px;cursor: pointer; box-shadow: 0 1px 20px rgba(0,155,255,1) ;">Music</button>
+    <button onclick="streams()" style="font-family: 'Fredoka', sans-serif;background-color:yellow; background: linear-gradient(to right, #ff0000, #b90000); color: black; padding: 6px 25px; border: none; border-radius: 5px; font-size: 30px;cursor: pointer; box-shadow: 0 1px 20px rgba(255,0,0,1) ;">Streams</button>
+  </div>
+  <br><br><br><br>
+  <div id="streams">
+    <h1 style="text-align:center; color:#198100; font-size:50px;">Phonk</h1>
+ <button onclick="streamsphonk(1)" style="background-color:black; color:white;">DJ mix 6 | Javi17mod | Phonk Sesion</button>
+   <h1 style="text-align:center; color:#0070c9; font-size:50px;">Electronic</h1>
+  <button onclick="streamselectro(1)" style="background-color:black; color:white;">DJ mix 1 | Javi17mod</button>
+  <button onclick="streamselectro(2)" style="background-color:black; color:white;">DJ mix 2 | Javi17mod</button>
+  <button onclick="streamselectro(3)" style="background-color:black; color:white;">DJ mix 3 | Javi17mod</button>
+  <button onclick="streamselectro(4)" style="background-color:black; color:white;">DJ mix 4 | Javi17mod</button>
+  <button onclick="streamselectro(5)" style="background-color:black; color:white;">DJ mix 5 | Javi17mod</button>
+</div>
+  </div><br><br><br>
+  <div id="peopleradio">
+    <button onclick="playpublic(1)"><img src="javi17mod.png" width="30px"> Tomorrowland Radio | Javi17mod</button>
+    <button onclick="email()">Do you Want your own radio 24/7 for share my YouTube channel? Touch me</button>
+  </div>
+  <div id="radio">
+    <button id="boton" style="display: block;margin: 0 auto; background-color:yellow;background: linear-gradient(to right, #FF5733, #FFC300);color: black;font-family:Georgia;padding: 6px;border: none;
+                border-radius: 10px;
+                font-size: 30px;
+                cursor: pointer;
+                box-shadow: 0 5px 20px rgba(255,200,0,1);">
+      🔴𝐏𝐥𝐚𝐲 𝐑𝐚𝐝𝐢𝐨🔴</button>
+<audio src="http://stream.zeno.fm/ivarge8h6egvv" id="audioPlayer"></audio>
+  <script>
+    var play = 0;
+    const boton = document.getElementById('boton');
+    const mute = document.getElementById('mute')
+const audio = new Audio('http://stream.zeno.fm/ivarge8h6egvv')
+boton.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.currentTime = 0;
+    audio.play();
+    boton.innerHTML = '| |';
+  } else {
+    audio.pause();
+    boton.innerHTML = '■';
+  }
+});
+  </script>
+  <br>
+<img src="radio.png" alt="radio img" style="box-shadow: 0 20px 20px rgba(255,255,255,1);">
+    <br>
+  </div>
+  <div id="videos">
+    <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/youtube-live-subscriber-counter/UCDWflviULB2iZK2Bb5TEIkg style="border: 0; width:300px; height:80px;"></iframe>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<button onclick="recent()" style="display:block; margin: 0 auto;  
+  background:linear-gradient(to right, #ff00ec, #ff0000);
+                color: white;
+                padding: 15px 80px;
+                border: yes;
+                border-color: black;
+                border-radius: 10px;
+                font-size: 30px;
+                box-shadow: 0 5px 10px rgba(0,0,0,1);">
+  𝐑𝐞𝐜𝐞𝐧𝐭 𝐯𝐢𝐝𝐞𝐨
+</button>
+  <br>
+  <br>
+  <br>
+  <h2 style="color: black;">Sponsor</h2>
+  <iframe width="375" height="315" src="https://www.youtube.com/embed/OTqq5sJ4o3Y" title="YouTube video player" frameborder="1" style="border-color: black;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br>
+  <br>
+  <h1 style="color: red;">Famous video</h1>
+  <iframe width="375" height="315" src="https://www.youtube.com/embed/dK2KkpoIvvM" title="YouTube video player" frameborder="1" style="border-color: red;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br>
+  <br>
+  <h3 style="color: purple;">Intro</h3>
+  <iframe width="375" height="315" src="https://www.youtube.com/embed/u9y_cZOvKJs" title="YouTube video player" frameborder="1" style="border-color: purple;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br><br><br><br>
+  </div>
+  <div id="music">
+    <h1 style="text-align: center;">Javi17mod Music</h1>
+  <br>
+  <br>
+  <br>
+  <iframe width="80%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475210755&color=%23ad00ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #00ffff;line-break: anywhere;word-break: normal;overflow: hidden;white-space: normal;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/javi17mod" title="Javi17mod" target="_blank" style="color: #00ffff; text-decoration: none;"></a><a href="https://soundcloud.com/javi17mod/dance-night-javi17mod" title="Dance Night (Javi17mod)" target="_blank" style="color: #00ffff; text-decoration: none;"></a></div>
+  <br>
+  <iframe width="80%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1476498343&color=%23ad00ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/javi17mod" title="Javi17mod" target="_blank" style="color: #cccccc; text-decoration: none;"></a><a href="https://soundcloud.com/javi17mod/party-disco" title="Disco party (Javi17mod)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+  </div>
+
+<header id="down">
+    <p>Copyright by <a href="">𝗝𝗮𝘃𝗶𝟭𝟳𝗺𝗼𝗱</a> | <a href="https://www.youtube.com/channel/UCDWflviULB2iZK2Bb5TEIkg?sub_confirmation=1">►</a></p>
+</header>
+<!-- Events -->
+    <div class="loading-screen">
+        <h1 style="color:white;">Loading</h1>
+        <img src="javi17mod.png" alt="">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+   <!--Wifi detection-->
+      <div id="popout" class="hidden">
+        <p id="message"></p>
+        <img src="https://i.ibb.co/x20wRFP/wkj-Myjdmgd7-SOOtuxx-i-PHf-QC8l-J08k5-OUy.png" width="220px">
+    </div>
+    <script src="script.js"></script>
+          <image src="settings.png" id="circle" onclick="showPopout()">
+  <!-- Admin codes -->
+        <div id="popout1">
+          <h5>Enter Admin Code</h5>
+            <input type="text" id="codeInput">
+            <button onclick="verifyCode()">Subbmit</button>
+            <p id="errorMessage"></p>
+            <br>
+          <div class="botones">Version:  
+            <div id="subsBox"></div>
+          </div>
+          <div id="navegador" style="color:black;">Browser: </div>
+            <button onclick="hidePopout()" style="background-color: black; color: red;">Close</button>
+        </div>
+        <div></div>
+<!-- Notifications -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "dfbe5e9d-8f48-414d-928b-1b71a20df487",
+      safari_web_id: "web.onesignal.auto.36762c33-c595-4251-8e66-ea9a822d3713",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+</body>
+</html>
