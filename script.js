@@ -12,7 +12,6 @@ if(localStorage.getItem('storaged')) {
   localStorage.setItem('storaged', 0);
   var storaged = localStorage.getItem('storaged');
 };
-window.onload = function() {
     var progressBar = document.querySelector('.progress');
     var loadingScreen = document.querySelector('.loading-screen');
     var progress = 0;
@@ -29,7 +28,6 @@ window.onload = function() {
             }, 500);
         }
     }, 100);
-}
 
 /////////////////// Buttons func ////////////////////
 function peopleradio() {
